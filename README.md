@@ -8,7 +8,8 @@
  - used socket.io 
 
 
-I became so frustrated in trying to get this simple setup to work - that I decided to post this repo when I got it working.  
+I got really frustrated trying to get this to work - so I decided to post this repo.  
+
 There is so much wrong info out there, so many too-specific examples, so many left-out-but-important details, outdated info, mistaken info, conflicting info.
 
 Laundry list of terms/concepts/things that caused me grief (I'd like to make a word cloud out of this, and use it for target practice):
@@ -25,7 +26,7 @@ Assumptions:
 
 ---
 
-start at a bash/cmd prompt in the parent directory of the project:
+### start at a bash/cmd prompt in the parent directory of the project:
 
 
 `mkdir projectdir && cd projectdir`
@@ -37,7 +38,7 @@ start at a bash/cmd prompt in the parent directory of the project:
 
 `code .`
 
-add .gitignore:
+### add .gitignore:
 
   `node_modules`
   `dist`
@@ -50,7 +51,7 @@ add .gitignore:
 `npm i --save-dev typescript @types/express @types/node nodemon ts-node-dev`
 
 
-** add npm scripts **
+### add npm scripts
 
 
   `"scripts": {`
@@ -61,7 +62,7 @@ add .gitignore:
 
 ---
 
-## tsconfig.json - replace what tsc --init did with the following:
+### tsconfig.json - replace what tsc --init did with the following:
 
 `{`
 `  "compilerOptions": {`
@@ -96,7 +97,7 @@ add .gitignore:
 
 ---
 
-## src/server.ts - main server entry point - paste in the following:
+### src/server.ts - main server entry point - paste in the following:
 
 `import express from 'express'`
 `import http from 'http'`
@@ -137,7 +138,7 @@ add .gitignore:
 
 ---
 
-all done!
+## all done!
 
 `npm run dev`
 
