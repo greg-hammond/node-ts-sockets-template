@@ -44,22 +44,18 @@ code .
   dist
 ```
 
+### initialize npm, install deps, add scripts
+
 ```
 npm init
 
 entry point: /dist/server.js
-```
 
-```
 npm i express socket.io cors tslib
 npm i --save-dev typescript @types/express @types/node nodemon ts-node-dev
-```
 
-### add npm scripts
-
-```
   "scripts": {
-  "start": "nodemon ./dist/server.js",
+    "start": "nodemon ./dist/server.js",
     "dev": "ts-node-dev --respawn --transpile-only ./src/server.ts"
   },
 ```
